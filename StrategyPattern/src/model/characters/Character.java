@@ -1,25 +1,29 @@
-package model;
+package model.characters;
 
-import behaviors.Weapon;
+import behaviors.UseWeaponBehavior;
 
 /**
+ * Base model of characters existing in game
  * 
- * @author Tomasz Goralski Base model of characters existing in game
+ * @author Tomasz Goralski
  * 
  */
-public abstract class Characters {
+public abstract class Character {
 
 	private int health;
 	private int mana;
 	private int exp;
 
-	private Weapon weapon;
+	private UseWeaponBehavior useWeaponBeahvior;
 
+	
+	
+	
 	/**
 	 * method delegating weapon beahavior to concrete implements
 	 */
-	public void useWeapon() {
-		getWeapon().use();
+	public void useWeapon(){
+		getUseWeaponBeahvior().useWeapon();
 	}
 
 	public int getHealth() {
@@ -46,12 +50,12 @@ public abstract class Characters {
 		this.exp = exp;
 	}
 
-	public Weapon getWeapon() {
-		return weapon;
+	public UseWeaponBehavior getUseWeaponBeahvior() {
+		return useWeaponBeahvior;
 	}
 
-	public void setWeapon(Weapon weapon) {
-		this.weapon = weapon;
+	public void setUseWeaponBeahvior(UseWeaponBehavior useWeaponBeahvior) {
+		this.useWeaponBeahvior = useWeaponBeahvior;
 	}
 
 }
