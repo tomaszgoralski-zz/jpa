@@ -1,11 +1,11 @@
 package model.characters;
 
-import behaviors.UseBowBeahavior;
+import behaviors.UseSwordBeahavior;
 
 public class Warrior extends Character {
 
 	public Warrior() {
-		setUseWeaponBeahvior(new UseBowBeahavior());
+		setUseWeaponBeahvior(new UseSwordBeahavior());
 	}
 
 }

@@ -29,16 +29,17 @@ public class Main {
 	}
 
 	private static void warriorChangeStyleOfFight(Character warrior) {
+		System.out.println("Warrior founds bow..");
 		warrior.setUseWeaponBeahvior(new UseBowBeahavior());
 	}
 
 	private static void archerUseWeapon(Character archer) {
-		System.out.println("Archer use his bow: ");
+		System.out.println("Archer use his weapon: ");
 		archer.useWeapon();
 	}
 
 	private static void warriorUseWeapon(Character warrior) {
-		System.out.println("Warrior use his sword: ");
+		System.out.println("Warrior use his weapon: ");
 		warrior.useWeapon();
 	}
 

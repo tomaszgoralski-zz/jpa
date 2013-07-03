@@ -1,10 +1,10 @@
 package model.characters;
 
-import behaviors.UseSwordBeahavior;
+import behaviors.UseBowBeahavior;
 
 public class Archer extends Character {
 
 	public Archer() {
-		setUseWeaponBeahvior(new UseSwordBeahavior());
+		setUseWeaponBeahvior(new UseBowBeahavior());
 	}
 }
